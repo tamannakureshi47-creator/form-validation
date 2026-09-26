@@ -1,0 +1,343 @@
+/* =========================
+   BODY
+========================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    background-color: #2c3e50;
+}
+
+
+/* =========================
+   MAIN CONTAINER
+========================= */
+
+.container-custom {
+    display: flex;
+
+    max-width: 950px;
+
+    margin: 32px auto;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.left-side {
+    flex: 1;
+
+    background-color: #2c3e50;
+
+    color: white;
+
+    padding: 35px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.left-side h1 {
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+
+.left-side img {
+    width: 100%;
+
+    max-width: 300px;
+
+    border-radius: 8px;
+}
+
+
+.left-side p {
+    margin-top: 18px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.right-side {
+    flex: 1;
+
+    background-color: white;
+
+    padding: 28px;
+}
+
+
+/* =========================
+   FORM INPUT
+========================= */
+
+.form-control,
+.form-select {
+    height: 38px;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   ERROR
+========================= */
+
+.error {
+    font-size: 12px;
+
+    min-height: 16px;
+}
+
+
+/* =========================
+   GENDER + COUNTRY
+========================= */
+
+.gender-country {
+    display: flex;
+
+    gap: 15px;
+
+    align-items: flex-start;
+
+    margin-bottom: 8px;
+}
+
+
+.gender-box {
+    flex: 1;
+}
+
+
+.country-box {
+    flex: 1;
+}
+
+
+.gender-label {
+    font-size: 14px;
+
+    margin-right: 8px;
+}
+
+
+.gender-options {
+    display: inline-flex;
+
+    gap: 8px;
+
+    font-size: 13px;
+}
+
+
+.gender-options label {
+    cursor: pointer;
+}
+
+
+/* =========================
+   PASSWORD ICON
+========================= */
+
+.position-relative {
+    position: relative;
+}
+
+
+.password-icon {
+    position: absolute;
+
+    right: 12px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    color: #555;
+}
+
+
+/* =========================
+   PASSWORD REQUIREMENTS
+========================= */
+
+.password-requirements {
+    padding-left: 18px;
+
+    margin-top: 4px;
+
+    margin-bottom: 12px;
+
+    font-size: 12px;
+}
+
+
+.password-requirements li {
+    color: #dc3545;
+
+    margin-bottom: 2px;
+}
+
+
+.password-requirements li.valid {
+    color: #198754;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.submit-btn {
+    width: 100%;
+
+    border: none;
+
+    padding: 9px;
+
+    background-color: #2c3e50;
+
+    color: white;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+
+.submit-btn:hover {
+    background-color: #1f2d3a;
+}
+
+
+/* =========================
+   SUCCESS ALERT
+========================= */
+
+.custom-alert {
+    display: none;
+
+    font-size: 13px;
+
+    padding: 10px;
+
+    margin-bottom: 15px;
+}
+
+
+.custom-alert.show {
+    display: block;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background-color: #2c3e50;
+
+    color: white;
+
+    margin-top: 50px;
+
+    padding: 25px 0;
+}
+
+
+footer h5 {
+    font-weight: bold;
+}
+
+
+footer p {
+    font-size: 13px;
+}
+
+
+.social-icons a {
+    color: white;
+
+    margin-left: 15px;
+
+    font-size: 16px;
+
+    text-decoration: none;
+}
+
+
+.social-icons a:hover {
+    color: #ddd;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .container-custom {
+        flex-direction: column;
+
+        width: 90%;
+
+        margin: 25px auto;
+    }
+
+
+    .left-side {
+        padding: 30px 20px;
+    }
+
+
+    .right-side {
+        padding: 25px 20px;
+    }
+
+
+    .gender-country {
+        flex-direction: column;
+    }
+
+
+    .gender-box,
+    .country-box {
+        width: 100%;
+    }
+
+}
